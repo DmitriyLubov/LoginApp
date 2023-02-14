@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="-25" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="Zak-cT-MxJ">
             <objects>
-                <viewController id="mfB-Jl-wgP" sceneMemberID="viewController">
+                <viewController id="mfB-Jl-wgP" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G5i-2H-FUD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,6 +128,9 @@
                             <constraint firstItem="gHc-Ek-VHM" firstAttribute="centerX" secondItem="G5i-2H-FUD" secondAttribute="centerX" id="sZD-aH-vdj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcome" destination="5tA-mn-wO0" id="cU7-fY-Uf3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfZ-2F-aa8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="uw3-aD-753" userLabel="Exit" sceneMemberID="exit"/>
