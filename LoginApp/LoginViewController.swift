@@ -40,6 +40,11 @@ final class LoginViewController: UIViewController {
         welcomeVC.name = userName
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
     // MARK: - IB Actions
     @IBAction func showHintButtonTapped(sender: UIButton) {
         switch sender {
@@ -66,7 +71,7 @@ final class LoginViewController: UIViewController {
 }
 
 //MARK: UIAlertController
-extension LoginViewController {
+private extension LoginViewController {
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default)
