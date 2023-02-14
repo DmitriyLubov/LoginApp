@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xH5-ZU-3ub">
-                                <rect key="frame" x="40" y="231.33333333333331" width="313" height="197.33333333333331"/>
+                                <rect key="frame" x="40" y="241.33333333333331" width="313" height="197.33333333333331"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y8f-uq-Dt1">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="34.333333333333336"/>
@@ -68,7 +69,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xH5-ZU-3ub" secondAttribute="trailing" constant="40" id="82j-fH-edb"/>
                             <constraint firstItem="xH5-ZU-3ub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="BRm-kQ-wmR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="xH5-ZU-3ub" secondAttribute="bottom" constant="10" id="Mad-BK-0Ph"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="xH5-ZU-3ub" secondAttribute="bottom" id="Mad-BK-0Ph"/>
                         </constraints>
                     </view>
                     <connections>

@@ -14,7 +14,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     // MARK: - Private Property
-    private let userName = "Lubov Dmitriy Evgen'evich"
+    private let userName = "q"
     private let password = "q"
 
     // MARK: - Override Methods
