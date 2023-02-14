@@ -19,18 +19,11 @@ final class LoginViewController: UIViewController {
 
     // MARK: - Override Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if userNameTF.text != userName || passwordTF.text != password {
-            showAlert(
-                withTitle: "Invalid login or password",
-                andMessage: "Please, enter correct login and password"
-            )
-            passwordTF.text = ""
-            return
+        if checkLogIN() {
+            guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+            
+            welcomeVC.name = userName
         }
-        
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        
-        welcomeVC.name = userName
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -59,6 +52,20 @@ final class LoginViewController: UIViewController {
             userNameTF.text = ""
             passwordTF.text = ""
         }
+    }
+    
+    // MARK: - Privat Methods
+    private func checkLogIN() -> Bool {
+        if userNameTF.text != userName || passwordTF.text != password {
+            showAlert(
+                withTitle: "Invalid login or password",
+                andMessage: "Please, enter correct login and password"
+            )
+            passwordTF.text = ""
+            
+            return false
+        }
+        return true
     }
 
 }
