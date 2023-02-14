@@ -72,9 +72,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passwordButton" destination="C8B-l1-9dO" id="T2m-Gp-Vu2"/>
                         <outlet property="passwordTF" destination="sCt-30-39L" id="MCw-nM-KEy"/>
-                        <outlet property="userNameButton" destination="KP2-4C-xs6" id="FYW-hP-ONd"/>
                         <outlet property="userNameTF" destination="y8f-uq-Dt1" id="IU0-EO-A5g"/>
                     </connections>
                 </viewController>

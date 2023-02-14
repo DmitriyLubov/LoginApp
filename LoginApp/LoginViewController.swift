@@ -13,18 +13,11 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    @IBOutlet var userNameButton: UIButton!
-    @IBOutlet var passwordButton: UIButton!
-    
     // MARK: - Private Property
     private let userName = "Lubov Dmitriy Evgen'evich"
     private let password = "q"
 
     // MARK: - Override Methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if userNameTF.text != userName || passwordTF.text != password {
             showAlert(
@@ -47,8 +40,8 @@ final class LoginViewController: UIViewController {
     
     // MARK: - IB Actions
     @IBAction func showHintButtonTapped(sender: UIButton) {
-        switch sender {
-        case userNameButton:
+        switch sender.currentTitle {
+        case "Forgot User Name?":
             showAlert(
                 withTitle: "Oops!",
                 andMessage: "Your name is \(userName) 😉"
@@ -62,15 +55,15 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard segue.source is WelcomeViewController else { return }
-        
-        userNameTF.text = ""
-        passwordTF.text = ""
+        if segue.source is WelcomeViewController {
+            userNameTF.text = ""
+            passwordTF.text = ""
+        }
     }
 
 }
 
-//MARK: UIAlertController
+// MARK: - UIAlertController
 private extension LoginViewController {
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
