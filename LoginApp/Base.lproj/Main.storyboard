@@ -91,16 +91,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="gHc-Ek-VHM">
-                                <rect key="frame" x="109" y="159" width="175" height="163.66666666666663"/>
+                                <rect key="frame" x="20" y="159" width="353" height="163.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, ...!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tA-mn-wO0">
-                                        <rect key="frame" x="0.0" y="0.0" width="175" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="36"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rn-a2-tFR">
-                                        <rect key="frame" x="0.0" y="86" width="175" height="77.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="86" width="353" height="77.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="65"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
@@ -125,7 +125,8 @@
                             <constraint firstItem="gHc-Ek-VHM" firstAttribute="top" secondItem="p4V-cO-nbK" secondAttribute="top" constant="100" id="8Wr-i2-KeI"/>
                             <constraint firstItem="7md-2z-V9Q" firstAttribute="centerX" secondItem="G5i-2H-FUD" secondAttribute="centerX" id="D0k-ly-1ce"/>
                             <constraint firstItem="p4V-cO-nbK" firstAttribute="bottom" secondItem="7md-2z-V9Q" secondAttribute="bottom" constant="100" id="NAf-cB-7eH"/>
-                            <constraint firstItem="gHc-Ek-VHM" firstAttribute="centerX" secondItem="G5i-2H-FUD" secondAttribute="centerX" id="sZD-aH-vdj"/>
+                            <constraint firstItem="gHc-Ek-VHM" firstAttribute="leading" secondItem="p4V-cO-nbK" secondAttribute="leading" constant="20" id="NaU-Mf-so6"/>
+                            <constraint firstItem="p4V-cO-nbK" firstAttribute="trailing" secondItem="gHc-Ek-VHM" secondAttribute="trailing" constant="20" id="eIR-Zz-azT"/>
                         </constraints>
                     </view>
                     <connections>

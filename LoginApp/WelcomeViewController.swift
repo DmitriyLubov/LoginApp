@@ -17,6 +17,14 @@ final class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         welcome.text = "Welcome, \(name ?? "")!"
+        setGradient()
+    }
+    
+    private func setGradient() {
+        let layer = CAGradientLayer()
+        layer.colors = [UIColor.systemPurple.cgColor, UIColor.systemIndigo.cgColor]
+        layer.frame = view.frame
+        view.layer.insertSublayer(layer, at: 0)
     }
 
 }
