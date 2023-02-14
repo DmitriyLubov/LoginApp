@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,12 +27,15 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sCt-30-39L">
                                         <rect key="frame" x="0.0" y="54.333333333333343" width="313" height="34.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTO-gj-ies">
                                         <rect key="frame" x="0.0" y="108.66666666666666" width="313" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
+                                        <connections>
+                                            <segue destination="mfB-Jl-wgP" kind="presentation" modalPresentationStyle="fullScreen" id="XiY-xq-PIx"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wjp-6K-lIm">
                                         <rect key="frame" x="0.0" y="162.99999999999997" width="313" height="34.333333333333343"/>
@@ -42,12 +45,18 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot User Name?"/>
+                                                <connections>
+                                                    <action selector="showHintButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j6P-hd-aLD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8B-l1-9dO">
                                                 <rect key="frame" x="156.66666666666663" y="0.0" width="156.33333333333337" height="34.333333333333336"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot Password?"/>
+                                                <connections>
+                                                    <action selector="showHintButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lxK-dA-5VO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -62,6 +71,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="xH5-ZU-3ub" secondAttribute="bottom" constant="10" id="Mad-BK-0Ph"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordButton" destination="C8B-l1-9dO" id="T2m-Gp-Vu2"/>
+                        <outlet property="passwordTF" destination="sCt-30-39L" id="MCw-nM-KEy"/>
+                        <outlet property="userNameButton" destination="KP2-4C-xs6" id="FYW-hP-ONd"/>
+                        <outlet property="userNameTF" destination="y8f-uq-Dt1" id="IU0-EO-A5g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,6 +114,9 @@
                                 <state key="normal" title="Log out">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="uw3-aD-753" kind="unwind" unwindAction="unwindFor:" id="iba-wQ-ard"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p4V-cO-nbK"/>
@@ -112,6 +130,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfZ-2F-aa8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="uw3-aD-753" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="851" y="4"/>
         </scene>
