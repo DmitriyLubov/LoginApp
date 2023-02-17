@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xH5-ZU-3ub">
-                                <rect key="frame" x="40" y="241.33333333333331" width="313" height="197.33333333333331"/>
+                                <rect key="frame" x="40" y="301.33333333333331" width="313" height="197.33333333333331"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y8f-uq-Dt1">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="34.333333333333336"/>
@@ -26,20 +26,20 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sCt-30-39L">
-                                        <rect key="frame" x="0.0" y="54.333333333333343" width="313" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="54.333333333333371" width="313" height="34.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTO-gj-ies">
-                                        <rect key="frame" x="0.0" y="108.66666666666666" width="313" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="108.66666666666669" width="313" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                         <connections>
-                                            <segue destination="mfB-Jl-wgP" kind="presentation" modalPresentationStyle="fullScreen" id="XiY-xq-PIx"/>
+                                            <action selector="LogInButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="6gK-PN-eXX"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wjp-6K-lIm">
-                                        <rect key="frame" x="0.0" y="162.99999999999997" width="313" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="163" width="313" height="34.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP2-4C-xs6">
                                                 <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="34.333333333333336"/>
@@ -69,12 +69,13 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xH5-ZU-3ub" secondAttribute="trailing" constant="40" id="82j-fH-edb"/>
                             <constraint firstItem="xH5-ZU-3ub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="BRm-kQ-wmR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="xH5-ZU-3ub" secondAttribute="bottom" id="Mad-BK-0Ph"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="xH5-ZU-3ub" secondAttribute="bottom" constant="-60" id="Mad-BK-0Ph"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="passwordTF" destination="sCt-30-39L" id="MCw-nM-KEy"/>
                         <outlet property="userNameTF" destination="y8f-uq-Dt1" id="IU0-EO-A5g"/>
+                        <segue destination="mfB-Jl-wgP" kind="presentation" identifier="openWelcomeVC" modalPresentationStyle="fullScreen" id="ytN-g8-bfc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
