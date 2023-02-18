@@ -42,9 +42,9 @@ final class LoginViewController: UIViewController {
                 welcomeVC.name = user.person.name
                 welcomeVC.surname = user.person.surname
             } else if let navigationVC = viewController as? UINavigationController {
-                let personVC = navigationVC.topViewController
+                let personVC = navigationVC.topViewController as? PersonViewController
                 guard let personVC else { return }
-                personVC.title = "Person"
+                personVC.person = user.person
             }
         }
     }

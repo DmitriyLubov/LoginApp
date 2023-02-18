@@ -253,6 +253,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="companyLabel" destination="rU3-Bx-O9Y" id="Bgn-uf-PSm"/>
+                        <outlet property="departmentLabel" destination="AHH-tl-Bpy" id="BGZ-bs-sDa"/>
+                        <outlet property="nameLabel" destination="vbv-Io-qO9" id="eey-MW-05G"/>
+                        <outlet property="postLabel" destination="EkN-tZ-ijP" id="Fyp-DG-lh1"/>
+                        <outlet property="surnameLabel" destination="Z1b-K0-rQk" id="a52-l5-xHM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S70-no-3Xu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

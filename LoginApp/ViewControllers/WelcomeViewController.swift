@@ -9,7 +9,7 @@ import UIKit
 
 final class WelcomeViewController: UIViewController {
 
-    @IBOutlet var welcome: UILabel!
+    @IBOutlet var welcomeLabel: UILabel!
     
     var name: String!
     var surname: String!
@@ -17,7 +17,7 @@ final class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        welcome.text = "Welcome, \(name ?? "") \(surname ?? "")!"
+        welcomeLabel.text = "Welcome, \(name ?? "") \(surname ?? "")!"
         setGradient()
     }
     
