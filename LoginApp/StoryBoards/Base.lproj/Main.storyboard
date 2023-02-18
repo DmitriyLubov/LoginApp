@@ -141,8 +141,8 @@
         <!--Name-->
         <scene sceneID="siH-EY-KGr">
             <objects>
-                <viewController id="PAQ-WY-pdu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cTb-97-rPI">
+                <viewController id="PAQ-WY-pdu" customClass="PersonViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cTb-97-rPI" customClass="Perso">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Yeo-Rm-cwq"/>
@@ -164,7 +164,7 @@
         <!--Name Bio-->
         <scene sceneID="FkM-FY-hfz">
             <objects>
-                <viewController id="4Fb-an-jLa" sceneMemberID="viewController">
+                <viewController id="4Fb-an-jLa" customClass="PersonBioViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tBv-EF-R78">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +183,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4G0-tu-YzS" customClass="UserTabBarController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bb0-lF-cJm">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </tabBar>
                     <connections>
@@ -203,6 +204,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="m4o-8U-Jus">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" systemColor="systemBackgroundColor"/>
                         </textAttributes>

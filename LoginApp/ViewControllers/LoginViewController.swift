@@ -19,9 +19,20 @@ final class LoginViewController: UIViewController {
 
     // MARK: - Override Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        let userTabBarVC = segue.destination as? UITabBarController
+        
+        guard let userTabBarVC else { return }
+        guard let viewControllers = userTabBarVC.viewControllers else { return }
             
-            welcomeVC.name = userName
+        viewControllers.forEach { viewController in
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.name = userName
+            } else if let navigationVC = viewController as? UINavigationController {
+                let personVC = navigationVC.topViewController
+                guard let personVC else { return }
+                personVC.title = "Person"
+            }
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

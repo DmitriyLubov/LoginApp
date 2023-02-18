@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B62F3A93299FA75E004AD7F7 /* UserTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F3A92299FA75E004AD7F7 /* UserTabBarController.swift */; };
+		B62F3A95299FB279004AD7F7 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F3A94299FB279004AD7F7 /* PersonViewController.swift */; };
+		B62F3A97299FCF80004AD7F7 /* PersonBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F3A96299FCF80004AD7F7 /* PersonBioViewController.swift */; };
 		B65904B7299B46950065C276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65904B6299B46950065C276 /* AppDelegate.swift */; };
 		B65904B9299B46950065C276 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65904B8299B46950065C276 /* SceneDelegate.swift */; };
 		B65904BB299B46950065C276 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65904BA299B46950065C276 /* LoginViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		B62F3A92299FA75E004AD7F7 /* UserTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabBarController.swift; sourceTree = "<group>"; };
+		B62F3A94299FB279004AD7F7 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		B62F3A96299FCF80004AD7F7 /* PersonBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonBioViewController.swift; sourceTree = "<group>"; };
 		B65904B3299B46950065C276 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65904B6299B46950065C276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B65904B8299B46950065C276 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				B65904BA299B46950065C276 /* LoginViewController.swift */,
 				B62F3A92299FA75E004AD7F7 /* UserTabBarController.swift */,
 				B65A8AD8299BA1090030BAFD /* WelcomeViewController.swift */,
+				B62F3A94299FB279004AD7F7 /* PersonViewController.swift */,
+				B62F3A96299FCF80004AD7F7 /* PersonBioViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -177,6 +183,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62F3A93299FA75E004AD7F7 /* UserTabBarController.swift in Sources */,
+				B62F3A97299FCF80004AD7F7 /* PersonBioViewController.swift in Sources */,
+				B62F3A95299FB279004AD7F7 /* PersonViewController.swift in Sources */,
 				B65904BB299B46950065C276 /* LoginViewController.swift in Sources */,
 				B65A8AD9299BA1090030BAFD /* WelcomeViewController.swift in Sources */,
 				B65904B7299B46950065C276 /* AppDelegate.swift in Sources */,
