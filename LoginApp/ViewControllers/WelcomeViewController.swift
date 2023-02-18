@@ -17,15 +17,16 @@ final class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.setGradient()
         welcomeLabel.text = "Welcome, \(name ?? "") \(surname ?? "")!"
-        setGradient()
     }
-    
-    private func setGradient() {
-        let layer = CAGradientLayer()
-        layer.colors = [UIColor.systemPurple.cgColor, UIColor.systemIndigo.cgColor]
-        layer.frame = view.frame
-        view.layer.insertSublayer(layer, at: 0)
-    }
+}
 
+extension UIView {
+    func setGradient() {
+        let viewLayer = CAGradientLayer()
+        viewLayer.colors = [UIColor.systemBlue.cgColor, UIColor.systemGreen.cgColor]
+        viewLayer.frame = frame
+        layer.insertSublayer(viewLayer, at: 0)
+    }
 }

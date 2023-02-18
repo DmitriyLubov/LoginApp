@@ -17,6 +17,7 @@ final class PersonBioViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.setGradient()
         title = "\(fullName ?? "") Bio"
         bioLabel.text = bio
     }
