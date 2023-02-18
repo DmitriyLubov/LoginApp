@@ -17,7 +17,7 @@ struct User {
             password: "password",
             person: Person(
                 name: "Дмитрий",
-                lastname: "Лубов",
+                surname: "Лубов",
                 company: "Артем ИРЦ",
                 department: "Автоматизации",
                 post: "Программист БД"
@@ -28,7 +28,7 @@ struct User {
 
 struct Person {
     let name: String
-    let lastname: String
+    let surname: String
     let company: String
     let department: String
     let post: String

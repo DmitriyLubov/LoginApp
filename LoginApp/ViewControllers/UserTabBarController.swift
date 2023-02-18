@@ -16,6 +16,5 @@ final class UserTabBarController: UITabBarController {
         tabBarAppearance.configureWithOpaqueBackground()
         tabBar.standardAppearance = tabBarAppearance
         tabBar.scrollEdgeAppearance = tabBarAppearance
-//        tabBar.backgroundColor = .label
     }
 }
