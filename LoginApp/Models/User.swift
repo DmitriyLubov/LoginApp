@@ -16,6 +16,7 @@ struct User {
             userName: "User",
             password: "password",
             person: Person(
+                nameImage: "DmitriyLubov",
                 name: "Дмитрий",
                 surname: "Лубов",
                 company: "Артем ИРЦ",
@@ -28,6 +29,7 @@ struct User {
 }
 
 struct Person {
+    let nameImage: String
     let name: String
     let surname: String
     let company: String

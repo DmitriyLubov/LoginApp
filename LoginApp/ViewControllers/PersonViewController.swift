@@ -15,6 +15,8 @@ final class PersonViewController: UIViewController {
     @IBOutlet var departmentLabel: UILabel!
     @IBOutlet var postLabel: UILabel!
     
+    @IBOutlet var personImageView: UIImageView!
+    
     var person: Person!
 
     override func viewDidLoad() {
@@ -32,7 +34,12 @@ final class PersonViewController: UIViewController {
         personBioVC.fullName = "\(person.name) \(person.surname)"
     }
     
+    override func viewDidLayoutSubviews() {
+        personImageView.layer.cornerRadius = personImageView.frame.width / 2
+    }
+    
     private func setLabel() {
+        personImageView.image = UIImage(named: person.nameImage)
         nameLabel.text = person.name
         surnameLabel.text = person.surname
         companyLabel.text = person.company
