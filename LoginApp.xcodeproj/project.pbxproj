@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61466FD29A06CDF00483B19 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61466FC29A06CDF00483B19 /* User.swift */; };
 		B62F3A93299FA75E004AD7F7 /* UserTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F3A92299FA75E004AD7F7 /* UserTabBarController.swift */; };
 		B62F3A95299FB279004AD7F7 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F3A94299FB279004AD7F7 /* PersonViewController.swift */; };
 		B62F3A97299FCF80004AD7F7 /* PersonBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F3A96299FCF80004AD7F7 /* PersonBioViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B61466FC29A06CDF00483B19 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B62F3A92299FA75E004AD7F7 /* UserTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabBarController.swift; sourceTree = "<group>"; };
 		B62F3A94299FB279004AD7F7 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		B62F3A96299FCF80004AD7F7 /* PersonBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonBioViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		B62F3A91299F8380004AD7F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B61466FC29A06CDF00483B19 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				B62F3A97299FCF80004AD7F7 /* PersonBioViewController.swift in Sources */,
 				B62F3A95299FB279004AD7F7 /* PersonViewController.swift in Sources */,
 				B65904BB299B46950065C276 /* LoginViewController.swift in Sources */,
+				B61466FD29A06CDF00483B19 /* User.swift in Sources */,
 				B65A8AD9299BA1090030BAFD /* WelcomeViewController.swift in Sources */,
 				B65904B7299B46950065C276 /* AppDelegate.swift in Sources */,
 				B65904B9299B46950065C276 /* SceneDelegate.swift in Sources */,
