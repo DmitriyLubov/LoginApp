@@ -142,7 +142,7 @@
         <scene sceneID="siH-EY-KGr">
             <objects>
                 <viewController id="PAQ-WY-pdu" customClass="PersonViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cTb-97-rPI" customClass="Perso">
+                    <view key="view" contentMode="scaleToFill" id="cTb-97-rPI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -272,10 +272,26 @@
                     <view key="view" contentMode="scaleToFill" id="tBv-EF-R78">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzn-lD-3ju">
+                                <rect key="frame" x="16" y="175" width="361" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PW4-s0-DgX"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="Hzn-lD-3ju" firstAttribute="top" secondItem="PW4-s0-DgX" secondAttribute="top" constant="20" id="6bG-q1-1yh"/>
+                            <constraint firstItem="PW4-s0-DgX" firstAttribute="trailing" secondItem="Hzn-lD-3ju" secondAttribute="trailing" constant="16" id="ETV-Dm-kYY"/>
+                            <constraint firstItem="Hzn-lD-3ju" firstAttribute="leading" secondItem="PW4-s0-DgX" secondAttribute="leading" constant="16" id="Vyi-d8-p3e"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Name Bio" id="FYA-Xe-g4d"/>
+                    <connections>
+                        <outlet property="bioLabel" destination="Hzn-lD-3ju" id="sbj-e9-Buz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hau-ur-pkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

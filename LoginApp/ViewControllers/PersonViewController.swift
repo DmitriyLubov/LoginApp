@@ -28,7 +28,8 @@ final class PersonViewController: UIViewController {
         let personBioVC = segue.destination as? PersonBioViewController
         guard let personBioVC else { return }
         
-        personBioVC.title = "Person Bio"
+        personBioVC.bio = person.biography
+        personBioVC.fullName = "\(person.name) \(person.surname)"
     }
     
     private func setLabel() {
